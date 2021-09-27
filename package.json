@@ -1,0 +1,20 @@
+{
+  "name": "questions-answers",
+  "version": "1.0.0",
+  "description": "This will hold the server and database for the questions and answers component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRATX58-SDC-TeamAlligator/questions-answers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRATX58-SDC-TeamAlligator/questions-answers/issues"
+  },
+  "homepage": "https://github.com/HRATX58-SDC-TeamAlligator/questions-answers#readme"
+}
