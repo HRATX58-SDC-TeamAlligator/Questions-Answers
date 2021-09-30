@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/HRATX58-SDC-TeamAlligator/questions-answers/issues"
   },
-  "homepage": "https://github.com/HRATX58-SDC-TeamAlligator/questions-answers#readme"
+  "homepage": "https://github.com/HRATX58-SDC-TeamAlligator/questions-answers#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
 }
