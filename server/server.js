@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const queries = require('../db/queries.js');
 
 const app = express();
 
