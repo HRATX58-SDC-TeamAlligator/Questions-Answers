@@ -1,4 +1,6 @@
 module.exports = {
+
+// GET requests ================================================================
   getQuestions: `
     SELECT
       question_id,
@@ -11,6 +13,7 @@ module.exports = {
     FROM questions
     WHERE product_id=$1 AND reported=false;
     `,
+  // left outer join because there will not be photos for every answer, all records from the answers table and matching records from the right table (not joining as many records), inner join only gave me records that had photos
   getAnswers: `
     SELECT
       answers.answer_id,
@@ -26,6 +29,8 @@ module.exports = {
     WHERE answers.question_id=$1 AND answers.reported=false
     GROUP BY answers.answer_id;
     `,
+
+// POST REQUESTS ===============================================================
   askQuestion: `
     INSERT INTO questions (
       product_id,
@@ -60,6 +65,8 @@ module.exports = {
     VALUES ($1, $2)
     RETURNING *;
     `,
+
+// UPDATE REQUESTS ==============================================================
   markQAsHelpful: `
     UPDATE questions
     SET helpful=helpful+1
