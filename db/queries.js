@@ -10,6 +10,7 @@ const pool = new Pool({
   port: process.env.PGPORT
 });
 
+// async/await - check out a client
 const getQAs = (product_id, callback) => {
   ; (async() => {
     const client = await pool.connect()
@@ -17,6 +18,8 @@ const getQAs = (product_id, callback) => {
       const res = await client.query(q.getQuestions, [product_id]);
       callback (null, res);
     } finally {
+      // Make sure to release the client before any error handling,
+      // just in case the error handling itself throws an error.
       client.release();
     }
   })().catch(err => console.error(err.stack))
@@ -70,7 +73,7 @@ const addPhoto = (answer_id, url, callback) => {
     }
   })().catch(err => console.error(err.stack))
 };
-// async/await - check out a client
+
 const markQAsHelpful = (question_id, callback) => {
   ; (async () => {
     const client = await pool.connect()
@@ -78,8 +81,6 @@ const markQAsHelpful = (question_id, callback) => {
       const res = await client.query(q.markQAsHelpful, [question_id]);
       callback (null, res);
     } finally {
-      // Make sure to release the client before any error handling,
-      // just in case the error handling itself throws an error.
       client.release();
     }
   })().catch(err => console.error(err.stack))

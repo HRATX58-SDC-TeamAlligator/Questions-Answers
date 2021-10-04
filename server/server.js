@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const queries = require('../db/queries.js');
 const PORT = 3004;
 const app = express();
@@ -110,6 +111,7 @@ app.put(`/qa/answers/:id/report`, (req, res) => {
     }
   });
 });
+
 
 app.listen(PORT, () => {
   console.info(`listening on ${PORT}...`);
