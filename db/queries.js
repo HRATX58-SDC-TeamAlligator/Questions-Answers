@@ -7,8 +7,10 @@ const pool = new Pool({
   host: process.env.PGHOST,
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
-  port: process.env.PGPORT
+  port: process.env.PGPORT,
+  idleTimeoutMillis: 1
 });
+
 
 // async/await - check out a client
 const getQAs = (product_id, callback) => {
