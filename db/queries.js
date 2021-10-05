@@ -8,7 +8,8 @@ const pool = new Pool({
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
   port: process.env.PGPORT,
-  idleTimeoutMillis: 1
+  // idleTimeoutMillis: 1
+  // uncomment above for testing
 });
 
 

@@ -4,8 +4,19 @@ const compression = require('compression');
 const queries = require('../db/queries.js');
 const PORT = 3004;
 const app = express();
+// const loader = require('./loaderio-bbb7b646b318c928672c6087937a878b.txt');
+// require('newrelic');
 
 app.use(cors());
+app.use(compression());
+
+// app.get(`/loaderio-bbb7b646b318c928672c6087937a878b/`, (req, res) => {
+//   if (err) {
+//     res.status(400).send('loader connection unsuccessful');
+//   } else {
+//     res.send(loader);
+//   }
+// });
 
 app.get(`/qa/:id`, (req, res) => {
   const product_id = req.params.id;
