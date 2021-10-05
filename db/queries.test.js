@@ -55,5 +55,4 @@ test('getSpecificAnswers should pass back the correct answer ids', done => {
   }
   queries.getSpecificAnswers(3518966, callback);
 });
-//write some more tests that test whether the specific data is correct
 
