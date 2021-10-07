@@ -19,7 +19,7 @@ const getQAs = (product_id, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.getQuestions, [product_id]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       // Make sure to release the client before any error handling,
       // just in case the error handling itself throws an error.
@@ -33,7 +33,7 @@ const getSpecificAnswers = (question_id, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.getAnswers, [question_id]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       client.release();
     }
@@ -45,7 +45,7 @@ const askQuestion = (product_id, body, asker_name, asker_email, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.askQuestion, [product_id, body, asker_name, asker_email]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       client.release();
     }
@@ -56,7 +56,6 @@ const answerQuestion = (question_id, body, answerer_name, answerer_email, photos
   ; (async() => {
     const client = await pool.connect()
     try {
-      console.log('hello from answer question');
       const res = await client.query(q.answerQuestion, [question_id, body, answerer_name, answerer_email]);
       callback(null, res);
     } finally {
@@ -82,7 +81,7 @@ const markQAsHelpful = (question_id, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.markQAsHelpful, [question_id]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       client.release();
     }
@@ -94,7 +93,7 @@ const markAnsAsHelpful = (answer_id, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.markAnsAsHelpful, [answer_id]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       client.release();
     }
@@ -106,7 +105,7 @@ const reportQuestion = (question_id, callback) => {
      const client = await pool.connect()
      try {
        const res = await client.query(q.reportQuestion, [question_id]);
-       callback (null, res);
+       callback(null, res);
      } finally {
        client.release();
      }
@@ -118,7 +117,7 @@ const reportAns = (answer_id, callback) => {
     const client = await pool.connect()
     try {
       const res = await client.query(q.reportAnswer, [answer_id]);
-      callback (null, res);
+      callback(null, res);
     } finally {
       client.release();
     }
