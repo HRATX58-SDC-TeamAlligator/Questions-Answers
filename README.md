@@ -17,7 +17,7 @@ I was tasked with re-engineering the backend of the "Questions and Answers" serv
 
 The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 5 ms with a 0.0% error rate.
 
-![](api/data/readMeFiles/loader-stress-test.png)
+![](/LoaderData.png)
 
 
 # Stack
