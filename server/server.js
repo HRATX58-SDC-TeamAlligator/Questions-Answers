@@ -6,20 +6,20 @@ const redis = require('redis');
 const PORT = 3004;
 const app = express();
 
-// const loader = require('./loaderio-bbb7b646b318c928672c6087937a878b.txt');
+const loader = require('loaderio-50061284b1bcbd5323608e49bf012779.txt');
 // require('newrelic');
 
 const client = redis.createClient();
 app.use(cors());
 app.use(compression());
 
-// app.get(`/loaderio-bbb7b646b318c928672c6087937a878b/`, (req, res) => {
-//   if (err) {
-//     res.status(400).send('loader connection unsuccessful');
-//   } else {
-//     res.send(loader);
-//   }
-// });
+app.get(`/loaderio-bbb7b646b318c928672c6087937a878b/`, (req, res) => {
+  if (err) {
+    res.status(400).send('loader connection unsuccessful');
+  } else {
+    res.send(loader);
+  }
+});
 client.on('connect', ()=> {
   console.info('Redis connection established');
 })
