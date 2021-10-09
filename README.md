@@ -9,7 +9,7 @@
 # About
 I was tasked with re-engineering the backend of the "Questions and Answers" service of a fashion website frontend. I:
   * Constructed RESTful API to handle requests to a database system of my own choosing
-  * Performed an ETL (Extract, Transform, Load) process on a raw, flawed data set consisting of over twelve million records
+  * Performed an ETL (Extract, Transform, Load) process on a raw data set consisting of over twelve million records
   * Designed and build an API server to provide data to the client in the format specified by the API documentation
   * Optimized database and query methods for speed and response
   * Deployed to the cloud using AWS
