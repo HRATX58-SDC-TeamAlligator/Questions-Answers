@@ -13,7 +13,7 @@ I was tasked with re-engineering the backend of the "Questions and Answers" serv
   * Designed and build an API server to provide data to the client in the format specified by the API documentation
   * Optimized database and query methods for speed and response
   * Deployed to the cloud using AWS
-  * Stress test all API routes, checking for RPS (requests per second), latency, and error rate
+  * Stress tested all API routes, checking for RPS (requests per second), latency, and error rate
 
 The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 600 users per second, registered an average response time of 12 ms with a 0.0% error rate.
 
