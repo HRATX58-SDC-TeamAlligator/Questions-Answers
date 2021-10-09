@@ -15,9 +15,9 @@ I was tasked with re-engineering the backend of the "Questions and Answers" serv
   * Deployed to the cloud using AWS
   * Stress test all API routes, checking for RPS (requests per second), latency, and error rate
 
-The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 5 ms with a 0.0% error rate.
+The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 600 users per second, registered an average response time of 12 ms with a 0.0% error rate.
 
-![](/LoaderData.png)
+![](./LoaderData.png)
 
 
 # Stack
