@@ -6,7 +6,7 @@ const redis = require('redis');
 const PORT = 3004;
 const app = express();
 
-const loader = require('loaderio-50061284b1bcbd5323608e49bf012779.txt');
+const loader = require('loaderio-e393ee15f83c85f3428d7ed8adfcbddc.txt');
 // require('newrelic');
 
 const client = redis.createClient();
