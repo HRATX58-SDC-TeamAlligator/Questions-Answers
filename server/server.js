@@ -13,13 +13,13 @@ const client = redis.createClient();
 app.use(cors());
 app.use(compression());
 
-app.get(`/loaderio-bbb7b646b318c928672c6087937a878b/`, (req, res) => {
-  if (err) {
-    res.status(400).send('loader connection unsuccessful');
-  } else {
-    res.send(loader);
-  }
-});
+// app.get(`/loaderio-bbb7b646b318c928672c6087937a878b/`, (req, res) => {
+//   if (err) {
+//     res.status(400).send('loader connection unsuccessful');
+//   } else {
+//     res.send(loader);
+//   }
+// });
 client.on('connect', ()=> {
   console.info('Redis connection established');
 })
