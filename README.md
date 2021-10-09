@@ -17,7 +17,7 @@ I was tasked with re-engineering the backend of the "Questions and Answers" serv
 
 The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 600 users per second, registered an average response time of 12 ms with a 0.0% error rate.
 
-![](./LoaderData.png)
+![](./loaderData.png)
 
 
 # Stack
@@ -36,12 +36,13 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
       <td>
         <img alt="Express.js" src="https://img.shields.io/badge/express.js-%23404d59.svg?&style=for-the-badge"/>
         <img alt="Postgres" src ="https://img.shields.io/badge/postgres-%23316192.svg?&style=for-the-badge&logo=postgresql&logoColor=white"/>
+        <img alt="Redis" src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white">
+        <img alt="Jest" src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
       </td>
     </tr>
     <tr>
       <th>Utilities</th>
       <td>
-        <img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" />
         <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red" />
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
       </td>
@@ -51,9 +52,7 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
       <td>
         <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
         <img alt="Trello" src="https://img.shields.io/badge/Trello-%23026AA7.svg?&style=for-the-badge&logo=Trello&logoColor=white"/>
-        <img alt="Slack" src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
         <img alt="Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"/>
-        <img alt="Zoom" src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white"/>
       </td>
     </tr>
     <tr>
@@ -69,15 +68,15 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
 Our team used Agile workflow for this project.
 
 ## Trello
-A Trello board was used to create and track tickets. We held daily standup meetings to discuss accomplishments, challenges, and upcoming tickets. We utilitized Discord, Slack, and Zoom in order to maintain effective remote collaboration and allow for quick communication when necessary.
+A Trello board was used to create and track tickets. We held daily standup meetings to discuss accomplishments, challenges, and upcoming tickets. We utilitized Discord in order to maintain effective remote collaboration and allow for quick communication when necessary.
 
 ## Version Control
-We utilized Git Feature Branch workflow. All pull requests in Github were reviewed by another team member before being merged into the main branch.
+We utilized Git Feature Branch workflow.
 
 # Development
 
 ## Repo
-`git clone https://github.com/SDC-team-houston/qa-service`
+`git clone https://github.com/HRATX58-SDC-TeamAlligator/questions-answers.git`
 
 ## Install
 `npm install`
