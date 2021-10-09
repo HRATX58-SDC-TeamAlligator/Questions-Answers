@@ -13,15 +13,12 @@ app.use(cors());
 app.use(compression());
 
 app.get(`/loaderio-e393ee15f83c85f3428d7ed8adfcbddc/`, (req, res) => {
-  if (err) {
-    res.status(400).send('loader connection unsuccessful');
-  } else {
-    res.send(loader);
-  }
+  res.send(loader);
 });
+
 client.on('connect', ()=> {
   console.info('Redis connection established');
-})
+});
 
 app.get('/qa/:id', (req, res) => {
   const product_id = req.params.id;
