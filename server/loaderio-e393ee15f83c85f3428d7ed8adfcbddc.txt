@@ -1,1 +1,1 @@
-loaderio-e393ee15f83c85f3428d7ed8adfcbddc
+module.exports = 'loaderio-e393ee15f83c85f3428d7ed8adfcbddc';
