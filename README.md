@@ -72,21 +72,3 @@ A Trello board was used to create and track tickets. We held daily standup meeti
 
 ## Version Control
 We utilized Git Feature Branch workflow.
-
-# Development
-
-## Repo
-`git clone https://github.com/HRATX58-SDC-TeamAlligator/questions-answers.git`
-
-## Install
-`npm install`
-
-## Start Scripts
-`npm start`
-
-## Install Postgres
-<a href="https://brew.sh/">Install Homebrew</a>
-
-`brew install postgres`
-
-<a href="https://www.postgresql.org/download/">Postgres Documentation</a>
